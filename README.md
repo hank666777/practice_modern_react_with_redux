@@ -1,3 +1,3 @@
-* Udemy class **Modern React with Redux**"
+* Udemy class **Modern React with Redux**
 
 * personal practice
