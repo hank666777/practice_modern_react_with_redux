@@ -1,30 +1,38 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import BookCreate from "./components/BookCreate";
 import BookList from "./components/BookList";
 
 function App() {
-  const [book, setBook] = useState([]);
+  const [books, setBooks] = useState([]);
+
+  const editBookById = (id, newTitle) => {
+    const updatedBooks = books.map(book => {
+      if (book.id === id) {
+        return {...book, title: newTitle};
+      }
+      return book;
+    })
+    setBooks(updatedBooks)
+  }
   const deleteBookById = (id) => {
-    const updateBooks = book.filter(book =>
+    const updatedBooks = books.filter(book =>
       book.id !== id
     );
-    setBook(updateBooks)
+    setBooks(updatedBooks)
   }
 
-  const [books, setBooks] = useState([]);
   const createBook = (title) => {
     const updatedBooks = [
       ...books,
-      {id : Math.round(Math.random() * 9999), titie}
+      {id : Math.round(Math.random() * 9999), title}
     ]
-    setBooks(books)
-
-    console.log('need to add book with:', title);
+    setBooks(updatedBooks)
   }
 
   return (
     <div className="app">
-      <BookList books={books} onDelete={deleteBookById} />
+      <h1>Reading List</h1>
+      <BookList books={books} onDelete={deleteBookById} onEdit={editBookById}/>
       <BookCreate onCreate={createBook} />
     </div>
   )
