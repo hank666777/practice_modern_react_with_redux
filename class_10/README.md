@@ -7,6 +7,7 @@
 > * `tailwind`
 > * `prop-types`
 > * `tailwind-merge`
+> * `react-icons`
 
 ## Tailwind CSS，[link](https://tailwindcss.com/docs/guides/create-react-app)
 * v3.4.3
@@ -32,4 +33,9 @@ npx tailwindcss init
 5. index.js
 ```js
 import './index.css'
+```
+
+## react-icons
+```bash
+npm i react-icons@4.6.0
 ```

@@ -1,5 +1,14 @@
+import DropDown from "./pages/DropDown";
+
 function App() {
-  return <h1>Hi there!</h1>
+  const options = [
+    {label: 'Red', value: 'red'},
+    {label: 'Green', value: 'green'},
+    {label: 'Blue', value: 'blue'},
+  ]
+  return (
+    <DropDown options={options}/>
+  )
 }
 
 export default App;
