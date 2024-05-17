@@ -19,7 +19,7 @@ function AccordionPage() {
     }
   ]
   return (
-    <Accordion items={items}/>
+    <Accordion value={items}/>
   )
 }
 
