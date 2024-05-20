@@ -7,30 +7,24 @@ function Provider({ children }) {
   const [books, setBooks] = useState([]);
 
   const fetchBooks = useCallback(async () => {
-    try {
-      const response = await axios.get("http://localhost:3001/books")
-      setBooks(response.data);
-    } catch (e) {
-      console.error(e);
-    }
+    const response = await axios.get("http://localhost:3001/books")
+    setBooks(response.data);
   }, [])
 
   const editBookById = async (id, newTitle) => {
-    try {
-      const response = await axios.put(`http://localhost:3001/books/${id}`, {
-        title: newTitle,
-      })
-      const updatedBooks = books.map(book => {
-        if (book.id === id) {
-          return {...book, ...response.data};
-        }
-        return book;
-      })
-      setBooks(updatedBooks)
-    } catch (e) {
-      console.error(e);
-    }
+    const response = await axios.put(`http://localhost:3001/books/${id}`, {
+      title: newTitle,
+    })
+
+    const updatedBooks = books.map(book => {
+      if (book.id === id) {
+        return {...book, ...response.data};
+      }
+      return book;
+    })
+    setBooks(updatedBooks)
   }
+
   const deleteBookById = async (id) => {
     await axios.delete(`http://localhost:3001/books/${id}`)
     const updatedBooks = books.filter(book =>
@@ -38,20 +32,17 @@ function Provider({ children }) {
     );
     setBooks(updatedBooks)
   }
+
   const createBook = async (title) => {
-    try {
-      const response = await axios.post('http://localhost:3001/books', {
-        title
-      })
-      if (response.status >= 200 && response.status < 300) {
-        const updatedBooked = [
-          ...books,
-          response.data
-        ]
-        setBooks(updatedBooked)
-      }
-    } catch (e) {
-      console.error(e);
+    const response = await axios.post('http://localhost:3001/books', {
+      title
+    })
+    if (response.status >= 200 && response.status < 300) {
+      const updatedBooked = [
+        ...books,
+        response.data
+      ]
+      setBooks(updatedBooked)
     }
   }
 
