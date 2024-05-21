@@ -1,1 +1,3 @@
-# session_18
+# session_19
+
+* Redux
