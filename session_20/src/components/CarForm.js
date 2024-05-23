@@ -1,6 +1,10 @@
+import { carsReducer } from "../store/slices/carsSlice";
+
 function CarForm() {
   return (
-    <div>CarForm</div>
+    <div className="car-form panel">
+      CarForm
+    </div>
   )
 }
 
