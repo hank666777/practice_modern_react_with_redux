@@ -1,5 +1,17 @@
+import CarForm from "./components/CarForm";
+import CarList from "./components/CarList";
+import CarSearch from "./components/CarSearch";
+import CarValue from "./components/CarValue";
+
 function App() {
-  return <h1>Hi there!</h1>
+  return (
+    <div className="App">
+      <CarForm/>
+      <CarList/>
+      <CarSearch/>
+      <CarValue/>
+    </div>
+  )
 }
 
 export default App;
