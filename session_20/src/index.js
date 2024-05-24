@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './store';
 import App from './App';
+import './styles.css';
+import 'bulma/css/bulma.min.css'
 
 const el = document.getElementById('root');
 const root = createRoot(el);
