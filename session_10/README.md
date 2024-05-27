@@ -2,7 +2,7 @@
 
 * Routing Systems
 
-> optional library
+> others library
 > * `classnames`
 > * `tailwind`
 > * `prop-types`
@@ -32,7 +32,7 @@ npx tailwindcss init
 ```
 5. index.js
 ```js
-import './index.css'
+import './index.css';
 ```
 
 ## react-icons

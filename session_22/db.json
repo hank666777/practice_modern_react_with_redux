@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Myra"
+    },
+    {
+      "name": "Elsie Price",
+      "id": "3"
+    },
+    {
+      "name": "Harold Strosin",
+      "id": "4"
+    }
+  ],
+  "albums": [
+    {
+      "id": "a40e",
+      "userId": "1",
+      "title": "Incredible Concrete Bike"
+    },
+    {
+      "id": "0bc9",
+      "userId": "1",
+      "title": "Ergonomic Fresh Gloves"
+    },
+    {
+      "id": "6724",
+      "userId": "3",
+      "title": "Small Steel Cheese"
+    }
+  ],
+  "photos": [
+    {
+      "id": "3817",
+      "albumId": "a40e",
+      "url": "https://loremflickr.com/150/150/abstract?lock=46846"
+    },
+    {
+      "id": "c79e",
+      "albumId": "a40e",
+      "url": "https://loremflickr.com/150/150/abstract?lock=62120"
+    },
+    {
+      "id": "063a",
+      "albumId": "6724",
+      "url": "https://loremflickr.com/150/150/abstract?lock=50980"
+    },
+    {
+      "id": "ec27",
+      "albumId": "6724",
+      "url": "https://loremflickr.com/150/150/abstract?lock=2124"
+    }
+  ]
+}
