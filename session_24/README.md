@@ -1,4 +1,11 @@
-# session_24
+# session_24 location-search
+
+###### `Typescript` `vite`
+
+* Typescript includes vite
+```bash
+npm create vite session_24 -- --template react-ts
+```
 # React + TypeScript + Vite
 
 ```bash

@@ -1,4 +1,10 @@
-# session_25 router
+# session_25 react-router
+
+> npm
+> `react-router`
+> `tailwind`
+> `react-router-dom`
+> `react-icons@4.6.0`
 
 ## tailwind
 * [tailwind with vite](https://tailwindcss.com/docs/guides/vite)
@@ -6,6 +12,11 @@
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
+
+## NPM Registry API
+[link](github.com/npm/registry/blob/master/docs/REGISTRY-API.md)
+
+
 
 # React + TypeScript + Vite
 

@@ -1,8 +1,7 @@
-# session_21
+# session_21 thunk
 
+* tag: `Redux thunk`
 * status: `skip`
-
-* Redux thunk
 
 > others library
 > * `classnames`

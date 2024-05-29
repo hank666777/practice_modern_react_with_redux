@@ -92,7 +92,7 @@ function collect<T extends keyof U, U extends object>(key: T, arr: U[]) {
   return arr.map(el => el[key]);
 }
 
-const resultCollect = collect('name', [
+const resultCollect = collect('count', [
   { count: 1, name: 'asdf' },
   { count: 20, name: 'apple' }
 ])

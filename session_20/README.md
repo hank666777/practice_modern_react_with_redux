@@ -1,3 +1,3 @@
 # session_20
 
-* React/ redux-toolkit
+* React/ redux-toolkit(RTK)

@@ -1,5 +1,5 @@
 import { GoTrash } from "react-icons/go";
-import { useRemoveAlbumMutation } from "../store/apis/albumsApi";
+import { useRemoveAlbumMutation } from "../store";
 import Button from './Button';
 import ExpandablePanel from "./ExpandablePanel";
 import PhotosList from "./PhotosList";
