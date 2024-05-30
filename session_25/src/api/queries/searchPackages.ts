@@ -1,4 +1,4 @@
-import type { PackageSummary } from "../types/packageSummary.ts";
+import type { PackageSummary } from "../types/packageSummary";
 
 interface SearchResponse {
   objects: {
